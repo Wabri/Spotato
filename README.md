@@ -13,39 +13,39 @@ There are 1+5 commands for Potato Spotify Signal:
 
 ![help](images/spotato_help.png)
 
-	without any arguments the spotato shows what power have.
+Without any arguments the spotato shows what power have.
 
 * **previous**
 
 ![previous](images/spotato_previous.png)
 
-	This command works as rewinder of the song or if the actual song is in the
-	first seconds (based on Spotify rules) reproduce the previous song.
+This command works as rewinder of the song or if the actual song is in the
+first seconds (based on Spotify rules) reproduce the previous song.
 
 * **next**
 
 ![next](images/spotato_next.png)
 
-	This tell the potato to go to the next song.
+This tell the potato to go to the next song.
 
 * **toggle**
 
 ![toggle](images/spotato_toggle.png)
 
-	The most common command that everyone use most, if play than pause and if
-	pause play.
+The most common command that everyone use most, if play than pause and if
+pause play.
 
 * **play**
 
 ![play](images/spotato_play.png)
 
-	It works only if the song is not played (pause).
+It works only if the song is not played (pause).
 
 * **pause**
 
 ![pause](images/spotato_pause.png)
 
-	It works only if the song is in paused (play).
+It works only if the song is in paused (play).
 
 It is very simple, if you want to skip song then run `spotato next` or if you
 want to pause the song just run `spotato pause` or even `spotato toggle`. Same
