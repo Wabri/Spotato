@@ -1,5 +1,7 @@
 # Potato-Spotify-Signal
 
+***The name of this repository was recommended by github***
+
 With this potato you can controll your spotify client with the command line.
 This feature is already implemented in all the desktop environment, but not for
 all.
