@@ -1,3 +1,6 @@
+<hl align=center>
+<img src="Logo/Potato Banner.svg" width=100%>
+
 # Potato-Spotify-Signal
 
 ***The name of this repository was recommended by github***
