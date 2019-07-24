@@ -139,3 +139,8 @@ If you have some **advices** just create a new issue.
 If you want to add some more feature **fork** this repository and pull request if
 you want to help me (or other).
 
+## Contributors
+
+Developer: [Wabri](https://github.com/wabri)
+
+Creator of logo: [Munadikieh](https://github.com/munadikieh)
