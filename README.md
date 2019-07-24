@@ -11,6 +11,9 @@ all.
 
 ## Usage
 
+<hl align=center>
+<img src="Logo/Potato.svg" width=100%>
+
 There are 1+5 commands for Potato Spotify Signal:
 
 * **help**: this is not a real command, this is the return if not matches the
