@@ -1,17 +1,27 @@
 <hl align=center>
 <img src="Logo/Potato Banner.svg" width=100%>
 
-# Potato-Spotify-Signal
+# Spotato
 
 ***The name of this repository was recommended by github***
 
-With this potato you can controll your spotify client with the command line.
+With this potato you can controll your mediaplayer client with the command line.
 This feature is already implemented in all the desktop environment, but not for
 all.
 
+## Media player supported
+
+There are two media player supported for now:
+
+1) [Spotify](https://www.spotify.com/)
+2) [Headset](https://github.com/headsetapp/headset-electron)
+
 ## Usage
 
-There are 1+5 commands for Potato Spotify Signal:
+<hl align=center>
+<img src="Logo/Potato.svg" width=100%>
+
+There are 1+5 commands for spotato:
 
 * **help**: this is not a real command, this is the return if not matches the
 	other commands
@@ -39,6 +49,8 @@ There are 1+5 commands for Potato Spotify Signal:
 * **pause**
 ![pause](images/spotato_pause.png)
 	It works only if the song is in paused (play).
+* **mediaplayer**: this command shows the mediaplayer supported to choose from
+to use spotato
 
 It is very simple, if you want to skip song then run `spotato next` or if you
 want to pause the song just run `spotato pause` or even `spotato toggle`. Same
@@ -48,21 +60,46 @@ if the song is in pause and you want to play that the send the spotato command
 
 That's all, nothing more. Nice and easy.
 
-## Install Spotify client
+## Install
+
+Took only 3 steps:
+
+1. Clone the repos:
+
+	```Bash
+	git clone https://github.com/Wabri/Spotato.git
+	```
+
+2. Move into the Potato directory:
+
+	```Bash
+	cd spotato
+	```
+
+3. Run with superuser permissions:
+
+	```Bash
+	./install.sh
+	```
+
+Now you can use the power of the potato music to do what you want.
+
+## Helps and more
+
+### Install Spotify client
 
 Obviously this works if you have the spotify client on the machine. You can
 install it with several ways:
 
 * [Help page of the official site](https://www.spotify.com/it/download/linux/)
 * [Snapcraft by canonical](https://snapcraft.io/spotify)
-* (only for debian distros) Adding the repository:
-
+* (Only for debian distros) Adding the repository:
     ```Bash
 	# 1. Add the Spotify repository signing keys to be able to verify downloaded packages
-	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90 2EBF997C15BDA244B6EBF5D84773BD5E130D1D45
+	curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 
 	# 2. Add the Spotify repository
-	echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+	echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
 	# 3. Update list of available packages
 	sudo apt-get update
@@ -71,34 +108,14 @@ install it with several ways:
 	sudo apt-get install spotify-client
 	```
 
-## Install Potato Spotify Signal
+### Install Headset client
 
-Took only 3 steps:
+See the repository here: [HEADSET](https://github.com/headsetapp/headset-electron)
 
-1. Clone the repos:
 
-	```Bash
-	git clone https://github.com/Wabri/Potato-Spotify-Signal.git
-	```
+### I3wm users
 
-2. Move into the Potato directory:
-
-	```Bash
-	cd Potato-Spotify-Signal
-	```
-
-3. Run with superuser permissions:
-
-	```Bash
-	sudo bash install.sh
-	```
-
-Now you can use the power of the potato music to do what you want.
-
-## I3wm users
-
-As you imagine I create this script to use spotify with
-[my i3wm configuration](https://github.com/Wabri/dotfiles).
+As you imagine I create this script to use spotify with [my i3wm configuration](https://github.com/Wabri/dotfiles).
 
 **Some advices**:
 
@@ -118,7 +135,7 @@ into your i3wm configuration file:
 
 	```I3wm
 	# Spotify modality
-	set $mode_spotify (h)Previous, (l)Next, (j)Pause, (k)Play, (s)Toggle
+	set $mode_spotato (h)Previous, (l)Next, (j)Pause, (k)Play, (s)Toggle
 	mode "$mode_spotify" {
 	    bindsym k exec --no-startup-id spotato play
 	    bindsym j exec --no-startup-id spotato pause
@@ -130,7 +147,7 @@ into your i3wm configuration file:
 	    bindsym q mode "default"
 	    bindsym Escape mode "default"
 	}
-	bindsym $mod+s mode "$mode_spotify"
+	bindsym $mod+s mode "$mode_spotato"
 	```
 
 ## How to contribute
