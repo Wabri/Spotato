@@ -24,6 +24,7 @@ case "$1" in
 				mediaplayer=spotify
 		esac
 		echo $mediaplayer > ~/.config/spotato/mediaplayer
+	;;
     play)
 		dbus-send --print-reply --dest=org.mpris.MediaPlayer2.$mediaplayer /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play
 	;;
