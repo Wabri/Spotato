@@ -49,14 +49,18 @@ There are 1+5 commands for spotato:
 * **pause**
 ![pause](images/spotato_pause.png)
 	It works only if the song is in paused (play).
-* **mediaplayer**: this command shows the mediaplayer supported to choose from
-to use spotato
 
 It is very simple, if you want to skip song then run `spotato next` or if you
 want to pause the song just run `spotato pause` or even `spotato toggle`. Same
 thing if you want to listen again the previous song run `spotato previous`, or
 if the song is in pause and you want to play that the send the spotato command
 `spotato play`.
+
+There is another command to change the default mediaplayer:
+
+```Bash
+spotato mediaplayer
+```
 
 That's all, nothing more. Nice and easy.
 
