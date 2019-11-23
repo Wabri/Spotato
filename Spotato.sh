@@ -60,6 +60,9 @@ case "$1" in
 		echo ''
 		echo 'Change the music'
 		echo '\tmediaplayer\tChoose the mediaplayer to manage'
+		;;
+	*)
+		echo "Spotato: '"$1"' is not a spotato command. See 'spotato help'"
 esac
 
 exit 0
