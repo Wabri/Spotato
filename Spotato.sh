@@ -15,6 +15,7 @@ case "$1" in
 		echo '  ---> What media player do you want to use?'
 		echo '   1) Spotify'
 		echo '   2) Headset'
+		echo 'If not in the list you can type your mediaplayer'
 		read -p '  ---> Type selection: ' key
 		case $key in
 			2)
