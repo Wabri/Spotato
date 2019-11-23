@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: debian-latest
+    runs-on: linux
 
     steps:
     - uses: actions/checkout@v1
