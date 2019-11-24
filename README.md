@@ -2,6 +2,7 @@
 <img src="Logo/Potato Banner.svg" width=100%>
 
 # Spotato
+![](https://github.com/Wabri/Spotato/workflows/CI/badge.svg)
 
 ***The name of this repository was recommended by github***
 
