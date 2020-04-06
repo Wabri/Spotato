@@ -10,7 +10,7 @@ With this potato you can controll your mediaplayer client with the command line.
 This feature is already implemented in all the desktop environment, but not for
 all.
 
-** NOT ONLY SPOTIFY CAN BE CONTROLL **
+**NOT ONLY SPOTIFY CAN BE CONTROLL**
 
 ## Usage
 
