@@ -10,6 +10,8 @@ With this potato you can controll your mediaplayer client with the command line.
 This feature is already implemented in all the desktop environment, but not for
 all.
 
+** NOT ONLY SPOTIFY CAN BE CONTROLL **
+
 ## Usage
 
 <hl align=center>
@@ -105,11 +107,6 @@ install it with several ways:
 	# 4. Install Spotify
 	sudo apt-get install spotify-client
 	```
-
-### Install Headset client
-
-See the repository here: [HEADSET](https://github.com/headsetapp/headset-electron)
-
 
 ### I3wm users
 
