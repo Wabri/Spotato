@@ -10,13 +10,6 @@ With this potato you can controll your mediaplayer client with the command line.
 This feature is already implemented in all the desktop environment, but not for
 all.
 
-## Media player supported
-
-There are two media player supported for now:
-
-1) [Spotify](https://www.spotify.com/)
-2) [Headset](https://github.com/headsetapp/headset-electron)
-
 ## Usage
 
 <hl align=center>
@@ -130,9 +123,9 @@ into your i3wm configuration file:
 
 	```I3wm
 	# Audio control
-	bindsym XF86AudioPrev exec --no-startup-id spotato previous
-	bindsym XF86AudioNext exec --no-startup-id spotato next
-	bindsym XF86AudioPlay exec --no-startup-id spotato toggle
+	bindsym XF86AudioPrev exec spotato previous
+	bindsym XF86AudioNext exec spotato next
+	bindsym XF86AudioPlay exec spotato toggle
 	```
 
 2. Or you can simple create a i3wm mode if you don't have that special keys
@@ -142,11 +135,11 @@ into your i3wm configuration file:
 	# Spotify modality
 	set $mode_spotato (h)Previous, (l)Next, (j)Pause, (k)Play, (s)Toggle
 	mode "$mode_spotify" {
-	    bindsym k exec --no-startup-id spotato play
-	    bindsym j exec --no-startup-id spotato pause
-	    bindsym s exec --no-startup-id spotato toggle, mode "default"
-	    bindsym l exec --no-startup-id spotato next
-	    bindsym h exec --no-startup-id spotato previous
+	    bindsym k exec spotato play
+	    bindsym j exec spotato pause
+	    bindsym s exec spotato toggle, mode "default"
+	    bindsym l exec spotato next
+	    bindsym h exec spotato previous
 
 	    # back to normal
 	    bindsym q mode "default"
