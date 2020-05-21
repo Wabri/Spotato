@@ -15,6 +15,7 @@ all.
 Works with:
 - Spotify
 - Headset
+- Nuclear
 - Chromium browser and derivate like Brave
 
 ## Usage
