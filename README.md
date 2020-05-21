@@ -12,6 +12,11 @@ all.
 
 **NOT ONLY SPOTIFY CAN BE CONTROLL**
 
+Works with:
+- Spotify
+- Headset
+- Chromium browser and derivate like Brave
+
 ## Usage
 
 <hl align=center>
