@@ -15,9 +15,13 @@ case "$1" in
 		echo '  ---> What media player do you want to use?'
 		echo '   1) Spotify'
 		echo '   2) Headset'
+                echo '   3) Chromium'
 		echo 'If not in the list you can type your mediaplayer'
 		read -p '  ---> Type selection: ' key
 		case $key in
+			3)
+                            mediaplayer=$( dbus-send --print-reply --dest=org.freedesktop.DBus  /org/freedesktop/DBus org.freedesktop.DBus.ListNames | grep chromium | awk -F ' ' '/string/ {print $2}' | cut -c25- | rev | cut -c2- | rev)
+                        ;;
 			2)
 				mediaplayer=headset
 			;;
