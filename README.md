@@ -64,6 +64,12 @@ There is another command to change the default mediaplayer:
 spotato mediaplayer
 ```
 
+or set by yourself:
+
+```Bash
+spotato mediaplayer <name of the mediaplayer>
+```
+
 That's all, nothing more. Nice and easy.
 
 ## Install
@@ -135,20 +141,22 @@ into your i3wm configuration file:
 (like me), something like this:
 
 	```I3wm
-	# Spotify modality
-	set $mode_spotato (h)Previous, (l)Next, (j)Pause, (k)Play, (s)Toggle
-	mode "$mode_spotify" {
-	    bindsym k exec spotato play
-	    bindsym j exec spotato pause
-	    bindsym s exec spotato toggle, mode "default"
-	    bindsym l exec spotato next
-	    bindsym h exec spotato previous
-
-	    # back to normal
-	    bindsym q mode "default"
-	    bindsym Escape mode "default"
-	}
-	bindsym $mod+s mode "$mode_spotato"
+        set $mode_spotato Media (h)  (l)  (j)  (k)  (s)  (a)  (d)  (c)  (q)
+        mode "$mode_spotato" {
+            bindsym k exec "spotato play ; notify-send --expire-time=400 --urgency=low "
+            bindsym j exec "spotato pause; notify-send --expire-time=400 --urgency=low "
+            bindsym s exec "spotato toggle; notify-send --expire-time=800 --urgency=normal /", mode "default"
+            bindsym l exec "spotato next; notify-send --expire-time=400 --urgency=low "
+            bindsym h exec "spotato previous; notify-send --expire-time=400 --urgency=low "
+        
+            bindsym d exec i3media vol_up
+            bindsym a exec i3media vol_down
+        
+            #back to normal
+            bindsym q mode "default"
+            bindsym Escape mode "default"
+        }
+        bindsym $mod+s mode "$mode_spotato"
 	```
 
 ## How to contribute
